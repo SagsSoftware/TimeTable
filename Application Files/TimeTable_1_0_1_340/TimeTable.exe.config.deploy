@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="TimeTable.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+    </sectionGroup>
+  </configSections>
+  <connectionStrings>
+    <add name="TimeTable.Properties.Settings.TimeTableConnectionString"
+      connectionString="sPxkDYaJ549eb8Bsl9KpcBWzhm86KLpLiqzZsvNROLo2Q4Xffsdq8GOB/8WkHD8nTuV7w3wYSy/SvvlmRtfzZjhHTF5mG8DHLMu+L65qG78="
+      providerName="System.Data.SqlClient" />
+    <add name="TimeTable.Properties.Settings.DCS20ConnectionString"
+      connectionString="sPxkDYaJ549eb8Bsl9KpcBWzhm86KLpLiqzZsvNROLof9auVzs/WerhgwCm48eaG3e335uSZYBufMkQVHgJQYh1rVDCJb7K8Rtsp07QV1Io="
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <add key="BaseStation" value="SGN"/>
+    <add key="SGN_TimeTable" value="sPxkDYaJ549eb8Bsl9KpcBWzhm86KLpLiqzZsvNROLo2Q4Xffsdq8GOB/8WkHD8nTuV7w3wYSy/SvvlmRtfzZjhHTF5mG8DHLMu+L65qG78="/>
+    <add key="SGN_DCS20" value="sPxkDYaJ549eb8Bsl9KpcBWzhm86KLpLiqzZsvNROLof9auVzs/WerhgwCm48eaG3e335uSZYBufMkQVHgJQYh1rVDCJb7K8Rtsp07QV1Io="/>
+    <add key="CXR_TimeTable" value="mXb0zxpoIuTQVdw7mD9izCmOWdYbPjaB0IYp4beMlQ0Eryr5Q8w71fZOctOfvRfIsI+QCK+rpyIbvWw3iSg1whNNOVSwt8FSgEom6YLOF4LtKBQ9O7if8EHIJ2P3AY9H"/>
+    <add key="CXR_DCS20" value="mXb0zxpoIuTQVdw7mD9izCmOWdYbPjaB0IYp4beMlQ1c6jd4CsjZD2LhBghQKXRDryLRuTlhQe3ukgatANUYPWenS/sWkv6DFzGNIYQdsSxKjwO35Dj0qVFiWuWx5I7c"/>
+    <add key="DAD_TimeTable" value="mXb0zxpoIuTQVdw7mD9izKUBKOHk+CJ2UIc0iS8PbvsFYA5gGQyNmHu9W41wu8Tt8E/LDE7eFJ56ZmGgTsdwopPP7hjx1nnCRKmfOIlzgRMhKvobYxBjul+eotrrnE9x"/>
+    <add key="DAD_DCS20" value="mXb0zxpoIuTQVdw7mD9izKn1chLcwHuCGPIN7X5ZYYBMV1/zkLVjimcPLcLiTQBDvDjXcohqdGpSI3BZBxK+o9/AzfQIi1DnGdMk+Q6F79oL1jl+b8pdzuSEmZljiZNP"/>
+    <add key="TEST_TimeTable" value="sPxkDYaJ549eb8Bsl9KpcBWzhm86KLpLiqzZsvNROLpTlC1rc74BO+RIbpAMhuIAhN6BJkgkHPlEByfVAWLkOhj+wuVf7ZRJFSOIBDHCiKc="/>
+    <add key="ClientSettingsProvider.ServiceUri" value=""/>
+    <add key="Display" value="0"/>
+    <add key="MasterTaskId" value="0"/>
+    <add key="DepartmentId" value="0"/>
+  </appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2"/>
+  </startup>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri=""/>
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400"/>
+      </providers>
+    </roleManager>
+  </system.web>
+  <userSettings>
+    <TimeTable.Properties.Settings>
+      <setting name="MaxWorkHour" serializeAs="String">
+        <value>480</value>
+      </setting>
+    </TimeTable.Properties.Settings>
+  </userSettings>
+</configuration>
